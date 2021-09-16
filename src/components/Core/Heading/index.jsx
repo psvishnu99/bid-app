@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Heading = () => {
+const Heading = ({title, className}) => {
     return (
-        <div>
-            
-        </div>
+        <>
+        <div className={`heading ${className}`}>{title}</div>
+        <div className="heading-border"></div>
+        </>
     )
 }
 
