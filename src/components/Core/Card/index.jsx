@@ -1,10 +1,9 @@
 import React from 'react'
 
-const Card =({shadow}) =>{
-    console.log("shadow-->", shadow);
+const Card =({shadow, children}) =>{
     return (
-        <div className={`card ${shadow ? "shadow" : ""}`}>
-            
+        <div className={`card ${shadow ? "shadow" : ""}`} >
+            {children}            
         </div>
     )
 };
