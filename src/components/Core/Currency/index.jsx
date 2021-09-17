@@ -1,9 +1,6 @@
-import React, { useState } from 'react';
-import {indianCurrency} from "../../../lib/lib";
-import rupeeIcon from "../../../assets/images/indian-rupee.png";
+import React, { useState } from 'react'
 
 const Currency = ({handleChange}) => {
-    const [currency,SetCurrency] =useState("");
     const [width,SetWidth] =useState(28);
     const [active,setActive] = useState(false);
 

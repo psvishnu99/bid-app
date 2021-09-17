@@ -6,7 +6,6 @@ import square from "../../assets/icons/square.svg";
 import more from "../../assets/icons/more.svg";
 import MoreDetails from '../Core/MoreDetails';
 import ProfileCard from '../Core/ProfileCard';
-import useDimensions from '../customHooks/useDimensions';
 import Card from '../Core/Card';
 
 
@@ -27,9 +26,6 @@ return  <div className="card-header">
 
 
 const VehicleDetailsCard = () => {
-    // const dimension = useDimensions();
-    // const width = (dimension.width/100) * 90;
-    // const margin = (dimension.height/100) * 5;
 
     return (
         <Card>
