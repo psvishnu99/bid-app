@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react';
 
 const useDimensions = () => {
-    const [width, setWidth] = useState("");
-    const [height, setHeight] = useState("");
+    const [width, setWidth] = useState(window.innerWidth);
+    const [height, setHeight] = useState(window.innerHeight);
     useEffect(()=>{
         
         const handleResize = () => {
@@ -16,4 +16,4 @@ const useDimensions = () => {
     return { width, height};
 }
 
-export default useDimensions
+export default useDimensions;

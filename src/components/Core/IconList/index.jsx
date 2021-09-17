@@ -4,9 +4,9 @@ const IconList = ({lists}) => {
     return(
         <>
         <div className="list-section">
-        {lists.map(list => {
+        {lists.map((list, idx) => {
             return(
-            <div className="list">
+            <div className="list" key={idx}>
                 <img src={list.icon} alt={list.name} />
                 <p>{list.name}</p>
             </div>
